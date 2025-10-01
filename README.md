@@ -1,6 +1,10 @@
 # Music Mood 🎶🥴
 This is a web app that recommends and plays music based on the user's selected mood.
 
+## Live Demo
+[Click here to try the Music Mood Web App](https://nwaiters.github.io/music-mood/)
+
+
 ## 🌟 Features
 
 - 🎧 **Mood-Based Playlists**  
