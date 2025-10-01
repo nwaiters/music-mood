@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0c0e25;
+    color: white;
+    margin: 0;
+}
+
+body:hover {
+background: #040410;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #000000;
+    border-bottom: 3px solid #ff66aa; /* gives it that “website header” look */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* subtle shadow for depth */
+}
+
+
+button {
+        padding: 30px 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border-radius: 10px;
+        border: black solid 2px;
+        transition: transform 0.3s, background-color 0.3s;
+        cursor: pointer;
+        background-color: #0c0e25;
+        color: white;
+    font-weight: bold;
+
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 10px #151515;
+    }
+
+
+.emotion[data-mood="chill"] button:hover {
+    background: linear-gradient(45deg, #d4fc79, #224e28);
+}
+
+.emotion[data-mood="blue"] button:hover {
+    background: linear-gradient(45deg, #a1c4fd, #1821b6);
+}
+
+.emotion[data-mood="hype"] button:hover {
+    background: linear-gradient(45deg, #ffb347, #ff3333);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    animation: zoomIn 0.3s ease forwards;
+    text-align: center;
+}
+
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+
+#song-title{
+    transition: transform 0.3s, background-color 0.3s;
+
+}
+#song-title:hover {
+    color: #7148b8;
+    transform: scale(1.1);
+    opacity: 10;
+
+
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

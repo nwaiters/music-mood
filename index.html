@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Mood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>How Are You Feeling Today?</h2>
+<p>Click an emotion</p>
+
+<div class="grid-container">
+
+<div class="emotion" data-mood="chill">
+    <button class="mood-button"> CHILL</button>
+</div>
+<br>
+<div class="emotion" data-mood="blue">
+    <button class="mood-button">BLUE</button>
+</div>
+<br>
+<div class="emotion" data-mood="hype">
+    <button class="mood-button">HYPE</button>
+</div>
+
+</div>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <img id="cover-image" src="" alt="Cover" width="200">
+        <h3 id="song-title">Song Title</h3>
+        <audio id="audio-player" controls>
+            <source src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
